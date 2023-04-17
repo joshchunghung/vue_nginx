@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  vite2:
+    build: .
+    container_name: vite2
+    volumes:
+      - .:/vue
+    ports:
+      - 8081:8080
+    tty: true
